@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/features.css" />
+    <link rel="stylesheet" href="styles/operations.css" />
+    <link rel="stylesheet" href="styles/testimonials.css" />
     <script src="js/main.js" defer></script>
     <title>Bankist</title>
   </head>
@@ -63,7 +65,7 @@
       </section>
     </header>
 
-    <section class="section">
+    <section class="features section">
       <div class="section-title">
         <h2 class="section-header">Features</h2>
         <h3 class="section-subheader">
@@ -81,7 +83,7 @@
           />
 
           <div class="feature__info">
-            <div class="feature-icon">
+            <div class="feature-icon svg-wrapper">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 id="Outline"
@@ -115,7 +117,7 @@
           />
 
           <div class="feature__info">
-            <div class="feature-icon">
+            <div class="feature-icon svg-wrapper">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 id="Layer_1"
@@ -148,7 +150,7 @@
           />
 
           <div class="feature__info">
-            <div class="feature-icon">
+            <div class="feature-icon svg-wrapper">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 id="Outline"
@@ -172,5 +174,115 @@
         </div>
       </div>
     </section>
+
+    <section class="operations section">
+      <div class="section-title">
+        <h2 class="section-header">Operations</h2>
+        <h3 class="section-subheader">
+          Everything as simple as possible, but no simpler.
+        </h3>
+      </div>
+
+      <div class="operations-wrapper">
+        <!-- TABS -->
+        <div class="tabs">
+          <button class="tab-item tab-item--1 active-tab">
+            <strong>01</strong> Instant Transfers
+          </button>
+          <button class="tab-item tab-item--2">
+            <strong>02</strong> Instant Loans
+          </button>
+          <button class="tab-item tab-item--3">
+            <strong>03</strong> Instant Closing
+          </button>
+        </div>
+
+        <article class="operation">
+          <div class="operations-icon operations-icon--1 svg-wrapper">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              id="Outline"
+              viewBox="0 0 24 24"
+              class="svg"
+              width="512"
+              height="512"
+            >
+              <path
+                d="M11.007,2.578,11,18.016a1,1,0,0,0,1,1h0a1,1,0,0,0,1-1l.007-15.421,2.912,2.913a1,1,0,0,0,1.414,0h0a1,1,0,0,0,0-1.414L14.122.879a3,3,0,0,0-4.244,0L6.667,4.091a1,1,0,0,0,0,1.414h0a1,1,0,0,0,1.414,0Z"
+              />
+              <path
+                d="M22,17v4a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V17a1,1,0,0,0-1-1H1a1,1,0,0,0-1,1v4a3,3,0,0,0,3,3H21a3,3,0,0,0,3-3V17a1,1,0,0,0-1-1h0A1,1,0,0,0,22,17Z"
+              />
+            </svg>
+          </div>
+
+          <h2>Tranfser money to anyone, instantly! No fees, no BS.</h2>
+
+          <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </article>
+
+        <article class="operation hidden">
+          <div class="operations-icon operations-icon--2 svg-wrapper">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              id="Outline"
+              viewBox="0 0 24 24"
+              class="svg"
+              width="512"
+              height="512"
+            >
+              <path
+                d="M23.121,9.069,15.536,1.483a5.008,5.008,0,0,0-7.072,0L.879,9.069A2.978,2.978,0,0,0,0,11.19v9.817a3,3,0,0,0,3,3H21a3,3,0,0,0,3-3V11.19A2.978,2.978,0,0,0,23.121,9.069ZM15,22.007H9V18.073a3,3,0,0,1,6,0Zm7-1a1,1,0,0,1-1,1H17V18.073a5,5,0,0,0-10,0v3.934H3a1,1,0,0,1-1-1V11.19a1.008,1.008,0,0,1,.293-.707L9.878,2.9a3.008,3.008,0,0,1,4.244,0l7.585,7.586A1.008,1.008,0,0,1,22,11.19Z"
+              />
+            </svg>
+          </div>
+
+          <h2>Buy a home or make your dreams come true, with instant loans.</h2>
+
+          <p class="text">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+        </article>
+
+        <article class="operation hidden">
+          <div class="operations-icon operations-icon--3 svg-wrapper">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              id="Outline"
+              viewBox="0 0 24 24"
+              class="svg"
+              width="512"
+              height="512"
+            >
+              <path
+                d="M11.007,2.578,11,18.016a1,1,0,0,0,1,1h0a1,1,0,0,0,1-1l.007-15.421,2.912,2.913a1,1,0,0,0,1.414,0h0a1,1,0,0,0,0-1.414L14.122.879a3,3,0,0,0-4.244,0L6.667,4.091a1,1,0,0,0,0,1.414h0a1,1,0,0,0,1.414,0Z"
+              />
+              <path
+                d="M22,17v4a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V17a1,1,0,0,0-1-1H1a1,1,0,0,0-1,1v4a3,3,0,0,0,3,3H21a3,3,0,0,0,3-3V17a1,1,0,0,0-1-1h0A1,1,0,0,0,22,17Z"
+              />
+            </svg>
+          </div>
+
+          <h2>No longer need your account? No problem! Close it instantly.</h2>
+
+          <p class="text">
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section testimonials"></section>
   </body>
 </html>

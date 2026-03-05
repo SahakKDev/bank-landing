@@ -3,10 +3,6 @@
   gap: 3rem;
 }
 
-.feature:not(:last-child) {
-    margin-bottom: 3rem;
-}
-
 .feature-reverse {
   flex-direction: row-reverse;
 }
@@ -17,11 +13,6 @@
 
 .feature-icon {
   background-color: var(--color-primary-opacity);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  border-radius: 50%;
   margin-bottom: 0.5rem;
 }
 

@@ -79,3 +79,21 @@ a {
 .blur {
   filter: blur(20px)
 }
+
+.svg-wrapper {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.hidden {
+  opacity: 0;
+}
