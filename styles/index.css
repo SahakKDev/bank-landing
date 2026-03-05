@@ -60,7 +60,7 @@ a {
 }
 
 .section-title {
-  width: 30rem;
+  width: 60rem;
   margin: auto;
   margin-bottom: 7rem;
 }
@@ -68,11 +68,11 @@ a {
 .section-header {
   text-transform: uppercase;
   color: var(--color-primary-darker);
-  font-size: 2rem;
+  font-size: 3.5rem;
 }
 
 .section-subheader {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: normal;
 }
 
