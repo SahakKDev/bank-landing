@@ -43,6 +43,7 @@ ul {
   background-color: var(--color-primary);
   padding: 0.8rem 1.2rem;
   border-radius: 60px;
+  display: inline-block;
 }
 
 a {
@@ -57,6 +58,10 @@ a {
   border-top: 1px solid #bebebe;
   padding-top: 5rem;
   padding-bottom: 10rem;
+}
+
+.section.footer {
+  padding-bottom: 3rem;
 }
 
 .section-title {
