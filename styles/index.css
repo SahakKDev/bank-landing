@@ -12,6 +12,43 @@
   --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #454545;
+}
+
 html {
   font-family: 'Poppins', sans-serif;
+  background-color: #eaeaea;
+}
+
+body {
+  padding: 0 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.btn-link {
+  border-bottom: 1px solid currentColor;
+  color: var(--color-primary-darker);
+  font-size: 1.2rem;
+}
+
+.btn--open-modal {
+  background-color: var(--color-primary);
+  padding: 0.8rem 1.2rem;
+  border-radius: 60px;
+}
+
+a {
+  text-decoration: none;
 }
