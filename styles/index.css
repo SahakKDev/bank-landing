@@ -24,16 +24,12 @@ html {
   background-color: #eaeaea;
 }
 
-body {
-  padding: 0 1rem;
-}
-
 ul {
   list-style: none;
 }
 
 .container {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -51,4 +47,35 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.section {
+  padding: 0 1rem;
+}
+
+.section:not(.header) {
+  border-top: 1px solid #bebebe;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+
+.section-title {
+  width: 30rem;
+  margin: auto;
+  margin-bottom: 7rem;
+}
+
+.section-header {
+  text-transform: uppercase;
+  color: var(--color-primary-darker);
+  font-size: 2rem;
+}
+
+.section-subheader {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.blur {
+  filter: blur(20px)
 }

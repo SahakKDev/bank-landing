@@ -1,0 +1,50 @@
+.feature {
+  display: flex;
+  gap: 3rem;
+}
+
+.feature:not(:last-child) {
+    margin-bottom: 3rem;
+}
+
+.feature-reverse {
+  flex-direction: row-reverse;
+}
+
+.feature-img {
+  width: 50%;
+}
+
+.feature-icon {
+  background-color: var(--color-primary-opacity);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.feature .svg {
+  fill: var(--color-primary);
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.feature__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex: 1;
+  padding-left: 10rem;
+}
+
+.feature-reverse .feature__info {
+  padding-left: 0;
+  padding-right: 10rem;
+}
+
+.feature__info h2 {
+  margin-bottom: 1rem;
+}
