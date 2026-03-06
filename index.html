@@ -23,20 +23,47 @@
     <title>Bankist</title>
   </head>
   <body>
+    <div class="backdrop hidden-remove"></div>
+    <div class="modal hidden-remove">
+      <button class="btn close-modal">X</button>
+      <h2>
+        Open your bank account in just <span class="highlight">5 minutes</span>
+      </h2>
+
+      <form>
+        <label for="firstName">First Name</label>
+        <input type="text" name="firstName" />
+
+        <br />
+
+        <label for="lastName">First Name</label>
+        <input type="text" name="lastName" />
+
+        <br />
+
+        <label for="email">First Name</label>
+        <input type="email" name="email" />
+
+        <br />
+
+        <button type="submit" class="submit-modal">Next Steps</button>
+      </form>
+    </div>
+
     <header class="header section">
       <nav class="header__nav">
-        <a href="#">
+        <a href="#" data-to="header" class="header__nav-list-item">
           <img src="img/logo.png" alt="Bankist logo" class="header__nav-logo" />
         </a>
 
         <ul class="header__nav-list">
-          <li class="header__nav-list-item">
+          <li data-to="features" class="header__nav-list-item">
             <a href="#">Features</a>
           </li>
-          <li class="header__nav-list-item">
+          <li data-to="operations" class="header__nav-list-item">
             <a href="#">Operations</a>
           </li>
-          <li class="header__nav-list-item">
+          <li data-to="testimonials" class="header__nav-list-item">
             <a href="#">Testimonials</a>
           </li>
           <li class="header__nav-list-item">
@@ -188,18 +215,18 @@
       <div class="operations-wrapper">
         <!-- TABS -->
         <div class="tabs">
-          <button class="tab-item tab-item--1 active-tab">
+          <button data-tab="1" class="tab-item  tab-item--1 active-tab">
             <strong>01</strong> Instant Transfers
           </button>
-          <button class="tab-item tab-item--2">
+          <button data-tab="2" class="tab-item tab-item--2">
             <strong>02</strong> Instant Loans
           </button>
-          <button class="tab-item tab-item--3">
+          <button data-tab="3" class="tab-item tab-item--3">
             <strong>03</strong> Instant Closing
           </button>
         </div>
 
-        <article class="operation">
+        <article class="operation operation--1">
           <div class="operations-icon operations-icon--1 svg-wrapper">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -228,7 +255,7 @@
           </p>
         </article>
 
-        <article class="operation hidden">
+        <article class="operation operation--2 hidden">
           <div class="operations-icon operations-icon--2 svg-wrapper">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -254,7 +281,7 @@
           </p>
         </article>
 
-        <article class="operation hidden">
+        <article class="operation operation--3 hidden">
           <div class="operations-icon operations-icon--3 svg-wrapper">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -394,7 +421,7 @@
         </li>
       </ul>
 
-      <img src="img/icon.png" alt="Logo icon" class="footer-logo">
+      <img src="img/icon.png" alt="Logo icon" class="footer-logo" />
     </footer>
   </body>
 </html>
