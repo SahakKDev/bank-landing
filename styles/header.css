@@ -11,6 +11,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 4rem;
+  z-index: 100;
 }
 
 .header__nav-logo {
@@ -70,4 +71,10 @@
 
 .hero-img {
   width: 30rem;
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
 }

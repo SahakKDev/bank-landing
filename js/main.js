@@ -1,5 +1,6 @@
 'use strict';
 
+const sectionHeader = document.querySelector('.header');
 const navHeader = document.querySelector('.header__nav');
 const backdrop = document.querySelector('.backdrop');
 const modal = document.querySelector('.modal');
@@ -85,3 +86,22 @@ tabs.addEventListener('click', function (e) {
     .querySelector(`.operation--${btn.dataset.tab}`)
     .classList.remove('hidden');
 });
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    const [entry] = entries;
+
+    if (!entry.isIntersecting) {
+      navHeader.classList.add('fixed');
+    } else {
+      navHeader.classList.remove('fixed');
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+    rootMargin: `-${navHeader.offsetHeight}px`,
+  },
+);
+
+observer.observe(sectionHeader);
