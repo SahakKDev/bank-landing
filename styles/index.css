@@ -52,10 +52,11 @@ a {
 
 .section:not(.header) {
   padding: 0 1rem;
+  transition: all 0.6s ease-in;
 }
 
 .header__nav-list-item {
-  transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease;
 }
 
 .opacity {
@@ -177,4 +178,9 @@ a {
   height: 100%;
   z-index: 998;
   backdrop-filter: blur(10px);
+}
+
+.dislocate {
+  transform: translateY(10rem);
+  opacity: 0;
 }

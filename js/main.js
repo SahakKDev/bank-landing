@@ -105,3 +105,25 @@ const observer = new IntersectionObserver(
 );
 
 observer.observe(sectionHeader);
+
+const revealObserver = new IntersectionObserver(
+  function (entries, observer) {
+    entries.forEach((entry) => {
+      console.log(entry.disconnect);
+      if (entry.isIntersecting) {
+        const { target } = entry;
+
+        target.classList.remove('dislocate');
+        observer.unobserve(target)
+      }
+    });
+  },
+  {
+    root: null,
+    threshold: 0.2,
+  },
+);
+
+document.querySelectorAll('.section').forEach((section) => {
+  revealObserver.observe(section);
+});
