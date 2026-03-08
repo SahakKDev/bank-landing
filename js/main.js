@@ -145,3 +145,39 @@ const lazyImagesObserver = new IntersectionObserver(
 imagesLazy.forEach((img) => {
   lazyImagesObserver.observe(img);
 });
+
+// SLIDER
+
+const btnLeftSlider = document.querySelector(".slider__btn--left");
+const btnRightSlider = document.querySelector(".slider__btn--right");
+const sliders = document.querySelectorAll(".slider");
+const slidersContainer = document.querySelector(".sliders");
+
+slidersContainer.style.overflowX = "hidden";
+
+let currentSlide = 0;
+let slidersLength = sliders.length;
+
+function onSlide(slide) {
+  currentSlide += slide;
+
+  if (currentSlide > slidersLength - 1) {
+    currentSlide = 0;
+  } else if (currentSlide < 0) {
+    currentSlide = slidersLength - 1;
+  }
+  sliders.forEach((slider, i) => {
+    slider.style.transform = `translateX(${(i - currentSlide) * (slider.offsetWidth + 100)}px)`;
+    console.log(i, currentSlide);
+    if (i === currentSlide) {
+      console.log(i);
+      slider.classList.remove("hidden");
+    } else {
+      slider.classList.add("hidden");
+    }
+  });
+}
+onSlide(0);
+
+btnLeftSlider.addEventListener("click", onSlide.bind(null, -1));
+btnRightSlider.addEventListener("click", onSlide.bind(null, 1));

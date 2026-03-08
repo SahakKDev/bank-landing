@@ -2,12 +2,13 @@
   width: 60rem;
   margin: auto;
   position: relative;
-  height: 22rem;
+  height: 24rem;
 }
 
 .slider {
   padding: 1rem 10rem;
   position: absolute;
+  transition: all 0.3s ease-in;
 }
 
 .slider h3 {
